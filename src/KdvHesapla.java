@@ -11,7 +11,7 @@ public class KdvHesapla {
 
         anapara = tara.nextDouble();
 
-        kdv = anapara*18/100;
+        kdv = anapara>1000 ? anapara*8/100: anapara*18/100;
 
         total = kdv + anapara;
 
